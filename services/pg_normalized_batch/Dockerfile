@@ -7,6 +7,14 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /tmp/db
 
+#RUN rm -rf /var/lib/postgresql/data/*
+
+
+#RUN mkdir /var/lib/postgresql/data/global
+
+#RUN touch /var/lib/postgresql/data/global/pg_control
+
+
 RUN mkdir /data && chown postgres /data
 
 # copy over the pagila database;

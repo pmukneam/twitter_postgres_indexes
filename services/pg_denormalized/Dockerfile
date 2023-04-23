@@ -3,7 +3,8 @@ FROM postgres:13
 RUN apt-get update && apt-get install -y \
     less \
     make \
-    vim
+    vim \
+    procps
 
 WORKDIR /tmp/db
 
